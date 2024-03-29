@@ -55,5 +55,4 @@ class ProductComment(models.Model):
     updated_at = models.DateTimeField(auto_now=True) 
     deleted_at = models.DateTimeField(null=True) 
     # user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=False) 
-    user_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, 
-    null=False) 
+    user_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False) 
